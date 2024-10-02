@@ -16,3 +16,20 @@
 //we can use npm init(press enter to skip)
 //or just npm init -y (default everything)
 
+
+//using setTimeout
+console.log("first");
+setTimeout(()=>{
+    console.log("second");
+},0);
+//Even with a setTimeout delay of 0ms, the callback is not executed immediately because it is asynchronous. 
+//It has to wait for the synchronous code to finish, and then the event loop moves it from the callback queue 
+//to the call stack. This illustrates the behavior of the JavaScript event loop and how asynchronous tasks like 
+//setTimeout are handled in comparison to synchronous code.
+console.log("Third");
+console.log("Fourth");
+setTimeout(()=>{
+    console.log("fifth");
+},0);//added to the next of first callback in the eventloop queue
+console.log("Third");
+console.log("sixth");
