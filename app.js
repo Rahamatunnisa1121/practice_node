@@ -16,4 +16,8 @@
 //we can use npm init(press enter to skip)
 //or just npm init -y (default everything)
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5c8f558db974c618695c3192a241c637e97b7b2e
+console.log("Node app");
